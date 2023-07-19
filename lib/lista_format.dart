@@ -14,7 +14,7 @@ class formas_contacto extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.symmetric(horizontal: 8.0,vertical: 4.0),
       child: Row(
         children: [
           Icon(icon),

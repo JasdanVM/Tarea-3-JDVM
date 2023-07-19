@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tarea3_design/lista_format.dart';
-import 'package:tarea3_design/my_icons_icons.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
   @override
@@ -67,7 +67,6 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: SizedBox(
                 width: double.infinity,
-                height: 250,
                 child: Card(
                   color: Colors.grey[300],
                   
@@ -81,6 +80,7 @@ class HomePage extends StatelessWidget {
                         )
                       ),
                       ListTile(
+                        minVerticalPadding: 5.0,
                         title: const Text('+504 9902-9311'),
                         subtitle: const Text('Celular'),
                         leading: const Icon(Icons.phone),
@@ -93,12 +93,12 @@ class HomePage extends StatelessWidget {
                         ),
                         onTap: () {},
                       ),
-                      const formas_contacto(icon: MyIcons.whatsapp_square, text: 'Enviar mensaje a'),
-                      const formas_contacto(icon: MyIcons.whatsapp_square, text: 'Llamar a'),
-                      const formas_contacto(icon: MyIcons.whatsapp_square, text: 'Videollamar a'),
-                      const formas_contacto(icon: MyIcons.telegram, text: 'Mensaje al'),
-                      const formas_contacto(icon: MyIcons.telegram, text: 'Llamada de voz al'),
-                      const formas_contacto(icon: MyIcons.telegram, text: 'Videollamada al'),
+                      const formas_contacto(icon: Icons.snapchat, text: 'Enviar mensaje a'),
+                      const formas_contacto(icon: Icons.snapchat, text: 'Llamar a'),
+                      const formas_contacto(icon: Icons.snapchat, text: 'Videollamar a'),
+                      const formas_contacto(icon: Icons.telegram, text: 'Mensaje al'),
+                      const formas_contacto(icon: Icons.telegram, text: 'Llamada de voz al'),
+                      const formas_contacto(icon: Icons.telegram, text: 'Videollamada al'),
                     ],
                       
                   ),
